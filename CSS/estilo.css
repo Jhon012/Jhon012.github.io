@@ -121,8 +121,16 @@ aside>article.fondito {
     color: rgb(228, 90, 49)
 }
 
-section.uno>h2#var {
+h2#var {
     font-size: xx-large;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: serif;
+}
+
+.pie {
+    background: #0e50619c
+}
+
+.autor {
+    background: #fff
 }
