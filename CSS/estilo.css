@@ -3,6 +3,12 @@
     padding: 0%
 }
 
+body {
+    background-image: url(/img/fondoimg.jpg);
+    background-size: 100%;
+    background-attachment: fixed
+}
+
 header {
     width: 100%
 }
