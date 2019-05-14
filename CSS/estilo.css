@@ -1,12 +1,14 @@
-* {
-    margin: 0%;
-    padding: 0%
-}
-
-body {
+body.inicio {
     background-image: url(/img/fondoimg.jpg);
     background-size: 100%;
     background-attachment: fixed
+}
+
+header.ini {
+    margin: 0%;
+    padding: 0%;
+    alt: 100%;
+    background: #f2584494
 }
 
 header {
@@ -88,10 +90,13 @@ body.imagen {
 
 table {
     border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border-collapse: separate;
     border-spacing: 5px;
     background: rgb(55, 172, 226);
     color: #fff;
+    align-items: center;
+    align-self: center;
 }
 
 #new {
@@ -103,4 +108,21 @@ table {
 
 #var {
     color: aliceblue
+}
+
+aside>article.fondito {
+    background: rgb(116, 177, 206);
+    padding: 0%;
+    margin: 0%;
+    border-radius: 10%;
+}
+
+#new1 {
+    color: rgb(228, 90, 49)
+}
+
+section.uno>h2#var {
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
