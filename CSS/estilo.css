@@ -1,23 +1,53 @@
-body.inicio {
-    background-image: url(/img/fondoimg.jpg);
-    background-size: 100%;
-    background-attachment: fixed
+body {
+    font: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0%;
+    padding: 0%;
 }
 
 header.ini {
     margin: 0%;
-    padding: 0%;
+    padding-top: 5px;
     alt: 100%;
-    background: #f2584494
+    background: #24282b;
+    color: #fff;
+    min-height: 70px;
+    border-bottom: 5px solid #1293d4;
 }
 
 header {
-    width: 100%
+    padding: 0%;
+}
+
+header #marca {
+    float: left;
+}
+
+header #marca h1 {
+    margin: 0%
+}
+
+header .resaltado,
+header .actual {
+    color: #1293d4;
+    font-weight: bold;
 }
 
 nav {
-    margin: 20px auto;
-    width: 90%;
+    float: right;
+    margin: 10px;
+    width: 70%;
     max-width: 1000px;
 }
 
@@ -41,6 +71,7 @@ nav ul li a {
     position: relative;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav ul li a span {
@@ -65,6 +96,23 @@ nav ul li a span .icon {
 
 nav ul li a:hover span {
     top: 0%
+}
+
+
+/*clase img redondeado*/
+
+.img {
+    border-radius: 5em;
+}
+
+
+/*estilo para la cabecerea */
+
+#cabecera {
+    min-height: 400px;
+    background: url("../img/unccajamarca.jpg");
+    text-align: center;
+    color: #f4f4f4;
 }
 
 
