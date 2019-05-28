@@ -96,7 +96,7 @@ body {
 }
 
 #lista {
-    list-style-image: url(/imagesZozor/ico_liensexterne.png);
+    list-style-image: url("imagesZozor/ico_liensexterne.png");
     column-count: 2;
 }
 
