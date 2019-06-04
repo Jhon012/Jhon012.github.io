@@ -82,6 +82,7 @@ nav ul li a:hover span {
 }
 
 #img {
+    align-items: center;
     width: 200px;
     right: 300px;
     border-radius: 15px;
@@ -145,24 +146,6 @@ aside>article.fondito {
 
 #new1 {
     color: rgb(228, 90, 49)
-}
-
-h2#var {
-    font-size: xx-large;
-    text-align: center;
-    font-family: serif;
-}
-
-.pie {
-    background: #0e50619c
-}
-
-.autor {
-    background: #fff
-}
-
-#negro {
-    color: #080808ee
 }
 
 .row {
