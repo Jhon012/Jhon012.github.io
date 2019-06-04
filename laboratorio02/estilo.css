@@ -34,7 +34,7 @@ body {
 
 .menu {
     text-align: right;
-    margin-top: -4em;
+    margin-top: -em;
 }
 
 #san {
@@ -120,4 +120,10 @@ body {
     margin-top: -3.2em;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    margin-top: 0;
+    float: right;
+}
+
+.row {
+    color: #181818;
 }

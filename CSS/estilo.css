@@ -2,7 +2,7 @@ body {
     font: Arial, Helvetica, sans-serif;
     padding: 0%;
     margin: 0%;
-    background-color: #f4f4f4;
+    background-color: black;
 }
 
 .contenedor {
@@ -16,18 +16,13 @@ ul {
     padding: 0%;
 }
 
-header.ini {
-    margin: 0%;
-    padding-top: 5px;
-    alt: 100%;
+header {
+    padding: 1%;
+    padding: -3em;
     background: #24282b;
     color: #fff;
-    min-height: 70px;
+    min-height: 50px;
     border-bottom: 5px solid #1293d4;
-}
-
-header {
-    padding: 0%;
 }
 
 header #marca {
@@ -46,9 +41,6 @@ header .actual {
 
 nav {
     float: right;
-    margin: 10px;
-    width: 70%;
-    max-width: 1000px;
 }
 
 nav ul {
@@ -67,7 +59,7 @@ nav ul li a {
     color: #fff;
     display: block;
     line-height: 20px;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -105,12 +97,17 @@ nav ul li a:hover span {
     border-radius: 5em;
 }
 
+#img {
+    width: 200px;
+    right: 300px;
+    border-radius: 15px;
+}
+
 
 /*estilo para la cabecerea */
 
 #cabecera {
     min-height: 400px;
-    background: url("../img/unccajamarca.jpg");
     text-align: center;
     color: #f4f4f4;
 }
@@ -119,15 +116,15 @@ nav ul li a:hover span {
 /*colores a las cajas del nav*/
 
 nav ul li a .color1 {
-    background: #0e50619c
+    background: #0e5061
 }
 
 nav ul li a .color2 {
-    background: #f2584494
+    background: #f25844
 }
 
 nav ul li a .color3 {
-    background: #5da5a185
+    background: #5da5a1
 }
 
 body.imagen {
@@ -151,11 +148,8 @@ table {
     color: blue;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 2em
-}
-
-#var {
-    color: aliceblue
+    font-size: 2em;
+    text-align: center;
 }
 
 aside>article.fondito {
@@ -185,4 +179,13 @@ h2#var {
 
 #negro {
     color: #080808ee
+}
+
+.row {
+    color: #172517;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 350px;
 }
