@@ -12,88 +12,175 @@
     <title>Lugares turisticos</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/CSS/estilo.css">
-    <link rel="stylesheet" href="/fonts.css">
+
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="/img/favijhon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .menu {
+            display: none;
+        }
+    </style>
 </head>
 
-<body class="inicio">
+<body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/"><span class="color1"><i class="icon icon-home"></i></span> INICIO</a></li>
-                <li><a href="sitios.html"><span class="color2"><i class="icon icon-earth"></i></span>LUGARES TURÍSTICOS</a></li>
-                <li>
-                    <a href="contactos.html"> <span class="color3"><i class="icon icon-phone"></i></span>CONTACTOS</a>
-                </li>
-            </ul>
-        </nav>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="/index.html" class="w3-bar-item w3-button w3-padding-large"><span class="color1"><i class="icon icon-home"></i></span>Perfil</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><span class="color2"><i class="icon icon-earth"></i></span>Lugares Turisticos</a>
+                <a href="/LugaresTuristicos/contactos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><span class="color3"><i class="icon icon-phone"></i></span>Contactenos</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                        <a href="#" class="w3-bar-item w3-button">Extras</a>
+                        <a href="#" class="w3-bar-item w3-button">Media</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
     </header>
-    <hr>
-    <h1 id="new" align="center"><strong><font color="blue"> CAJAMARCA Y SU BELLEZA</font></strong></h1>
-    <h2 id="var">Atractivos turisticos de Cajamarca...</h2>
-    <hr>
-    <section class="autor">
-        <address>
-            Por: <em>Jhon culqui</em>  <a href="https://es-la.facebook.com/unc.edu.pe/">(UNC)</a>Cajamarca <br>
-            Actualizado el 14 de Mayo del 2019
-        </address>
+    <section class="container">
+        <div id="demo" class="carousel slide " data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/ventanillas.jpg" alt="Amigos" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/caxamarca.jpg" alt="Cajamarca" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/cumbemayo.jpg" alt="Colegio" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
     </section>
     <section>
-        <h1 id="new1"><strong> 1. La ciudad de Cajamarca</strong></h1>
-        <table class="tabla">
-            <tr>
-                <th><img src="/img/caxanoche.jpg"></th>
-                <th>
-                    <p>La ciudad de <a href="https://youtu.be/fmiREx3GEGo">Cjamarca</a> lleva impresa las huellas de la historia del Perú. <br> Se puede ver tres vertientes de épocas distintas, es como si <br> la ciudad llevará tres en una, la inca, colonial
-                        y contemporánea. <br> Es una mezcla de tiempos. <br>
-                        <i><strong>La Plaza de Armas</strong></i>, conserva una pileta que muestra sus formas coloniales.</p>
-                    Considerada una de las plazas más bellas y antiguas del país. <br> Alrededor de la plaza se edificaron las principales de iglesias <br> de la ciudad: La Catedral y San Francisco. <br> Las cuales son de estilo barroco.</p>
-                </th>
+        <div class="w3-container ">
+            <h1><b>Lugares turisticos de Cajamarca</b></h1>
+            <div class="w3-section w3-bottombar w3-padding-16">
+                <span class="w3-margin-right">Filter:</span>
+                <button class="w3-button w3-black">ALL</button>
+                <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+            </div>
+        </div>
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="/img/caxamarca.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white text-justify">
+                    <p><b>Cajamarca</b></p><br>
+                    <p>La ciudad de <a href="https://youtu.be/fmiREx3GEGo">Cjamarca</a> lleva impresa las huellas de la historia del Perú. Se puede ver tres vertientes de épocas distintas, es como si la ciudad llevará tres en una, la inca, colonial y contemporánea.
+                        <br> Es una mezcla de tiempos.
+                        <i><strong>La Plaza de Armas</strong></i>, conserva una pileta que muestra sus formas coloniales. Considerada una de las plazas más bellas y antiguas del país. Alrededor de la plaza se edificaron las principales de iglesias de
+                        la ciudad: La Catedral y San Francisco. Las cuales son de estilo barroco.</p>
 
-            </tr>
-        </table>
-        <h1 id="new1"><strong> 2. Baños del Inca </strong></h1>
-        <table class="tabla">
-            <tr>
-                <th><img src="/img/baños.jpg"></th>
-                <th>
-                    <p>Los baños termales del Inca está situado a 6 km. de la ciudad. <br> El lugar es considerado la capital de los baños termales del Perú. <br> Por tener la primera fuente que se cita en la historia. <br> El alto contenido de minerales
-                        de las aguas que <br> afloran de los perolitos de alrededor de 75ºC <br> presenta propiedades curativas que atraen <br> a los viajeros desde tiempos prehispánicos.</p>
-                </th>
-            </tr>
-        </table>
-        <h1 id="new1"><strong> 3. Cumbemayo y los Frailones </strong></h1>
-        <table class="tabla">
-            <tr>
-                <th><img src="/img/cumbemayo.jpg"></th>
-                <th>
-                    <p>Se encuentran alrededor de 20 km. de la ciudad y 3500 metros de altura. <br> Los Frailones es un bosque de rocas pétreas que dan la <br> impresión de personas en procesión. <br> Además la manera como están erosionadas las rocas,<br>                        formando cuevas, arcos, elevaciones, abismos, <br> extrañas figuras. A un par de kilómetros se llega <br> canal prehispánico de Cumbemayo.</p>
-                </th>
-            </tr>
-        </table>
-        <h1 id="new1"><strong> 4. Santa Apolonia </strong></h1>
-        <table class="tabla">
-            <tr>
-                <th><img src="/img/santaapolonia.jpg"></th>
-                <th>Es el Mirador que predomina en toda la ciudad. <br> Se puede acceder por las trescientas escaleras. <br> No obstante, al llegar todo el cansancio queda <br> recompensado por la maravillosa vista <br> que hay en la cima. En el lugar se
-                    encuentra la <br> silla del Inca, que deviene de la época preinca. <br> También se encuentra una iglesia muy interesante</th>
-            </tr>
-        </table>
-        <h1 id="new1"><strong> 5. Ventanillas de Otuzco</strong></h1>
-        <table class="tabla">
-            <tr>
-                <th><img src="/img/ventanillas.jpg"></th>
-                <th>
+                </div>
+            </div>
+            <div class="text-justify w3-third w3-container w3-margin-bottom">
+                <img src="/img/bañosinca.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Baños del Inca</b></p><br>
+                    <p>Los baños termales del Inca está situado a 6 km. de la ciudad. El lugar es considerado la capital de los baños termales del Perú. Por tener la primera fuente que se cita en la historia. El alto contenido de minerales de las aguas que
+                        afloran de los perolitos de alrededor de 75ºC presenta propiedades curativas que atraen a los viajeros desde tiempos prehispánicos.
+
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="/img/cumbemayo.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Cumbemayo</b></p><br>
+                    <p>Se encuentran alrededor de 20 km. de la ciudad y 3500 metros de altura. Los Frailones es un bosque de rocas pétreas que dan la impresión de personas en procesión. Además la manera como están erosionadas las rocas, formando cuevas,
+                        arcos, elevaciones, abismos, extrañas figuras. A un par de kilómetros se llega canal prehispánico de Cumbemayo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="text-justify w3-third w3-container w3-margin-bottom">
+                <img src="/img/santaapolonia.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Santa Apolonia</b></p> <br>
+                    <p>Es el Mirador que predomina en toda la ciudad. Se puede acceder por las trescientas escaleras. No obstante, al llegar todo el cansancio queda recompensado por la maravillosa vista que hay en la cima. En el lugar se encuentra la silla
+                        del Inca, que deviene de la época preinca. También se encuentra una iglesia muy interesante
+                    </p>
+                </div>
+            </div>
+            <div class="text-justify w3-third w3-container w3-margin-bottom">
+                <img src="/img/ventanillas.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Ventanillas de Otuzco</b></p><br>
                     <p>Se encuentra a 8km. de la ciudad de
-                        <font color="blue">Cajamarca</font>. <br> Las Ventanillas de Otuzco son uno de los ejemplos más <br> maravillosos de necrópolis prehispánicas peruanas. <br> Sobre la pared de roca están labradas varios nichos <br> funerarios cuadrangulares. La mayor
-                        parte está vacío, <br> muchas de ellas fueron saqueadas por huaqueros <br> o buscadores de oro. Son construcciones semejantes a <br> unas ventanas y de ahí proviene el nombre que se le atribuyó. <br> Actualmente se encuentra protegida
-                        y conservada <br> por el Instituto Nacional de Cultura de Cajamarca.</p>
-                </th>
-            </tr>
-        </table>
+                        <font color="blue">Cajamarca</font>. Las Ventanillas de Otuzco son uno de los ejemplos más maravillosos de necrópolis prehispánicas peruanas. Sobre la pared de roca están labradas varios nichos funerarios cuadrangulares. La mayor parte está vacío,
+                        <br> muchas de ellas fueron saqueadas por huaqueros o buscadores de oro. Son construcciones semejantes a unas ventanas y de ahí proviene el nombre que se le atribuyó. Actualmente se encuentra protegida y conservada por el Instituto
+                        Nacional de Cultura de Cajamarca.</p>
+                </div>
+            </div>
+            <div class="text-justify w3-third w3-container">
+                <img src="/img/lacolpa.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>La Collpa</b></p><br>
+                    <p>Hacienda Collpa. Está situado a 11km. de la Plaza de Armas de Cajamarca. Una de las características especiales de este lugar es el llamado de las vacas por su nombre, las cuales al escuchar su nombre, se ubican en su correspondiente
+                        lugar en el establo para el ordeño. Se dice que todo empezó cuando el dueño de la hacienda comenzó a llamar a una de sus vacas con el nombre de su esposa, en plan de broma, y tanto fue su constancia que la vaca comenzó a obedecerle,
+                        para sorpresa y gracia de todos, de allí parte que comenzaron a nombrarlas a cada una.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <!-- Images of Me -->
+        <div class="w3-row-padding w3-padding-16" id="about">
+            <div class="w3-col m6">
+                <img src="/img/sanramon.jpg" alt="Me" style="width:100%">
+            </div>
+            <div class="w3-col m6">
+                <img src="/img/unccajamarca.jpg" alt="Me" style="width:100%">
+            </div>
+        </div>
 
     </section>
-    <hr>
+
     <section align="center">
         <cite id="new"><strong>
                 Vista aerea de la ciudad de Cajamarca
@@ -103,16 +190,34 @@
             <source src="/video/cajamarcavideo.mp4" type="video/mp4"/>
             <p>tu navegador no soport MP4</p>
         </video>
+        <section class="autor">
+            <address>
+                    Por: <em>Jhon culqui</em>  <a href="https://es-la.facebook.com/unc.edu.pe/">(UNC)</a>Cajamarca <br>
+                    Actualizado el 4 de junio del 2019
+                </address>
+        </section>
     </section>
-    <hr>
-    <footer class="pie">
 
-        <em><p id="var">Visitar página en:<a href="https://www.facebook.com/jhonwuz@hotmail.com">faceboock-jhon</a></p> </em> &copy; <em>Culqui Galan 2019 - Todos los derechos reservados por.</em>
-
+    <footer class=" w3-container w3-teal w3-center w3-margin-top">
+        <em><p >Visitar página en:<a href="https://www.facebook.com/jhonwuz@hotmail.com">faceboock-jhon</a></p> </em> &copy; <em>Culqui Galan 2019 - Todos los derechos reservados por.</em>
         <address id="var"><strong>Autor: Jhon Culqui.</strong></address>
-        <ins id="var" datetime="060519"> Lunes 6 de mayo del 2019</ins>
+        <ins datetime="060519"> Lunes 4 de junio del 2019</ins><br>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+
     </footer>
-    <script src="" async defer></script>
+
+
+    <script src="Bootstrap/js/jquery.js" async defer></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

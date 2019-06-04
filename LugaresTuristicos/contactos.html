@@ -12,88 +12,89 @@
     <title>Contactos</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/CSS/estilo.css">
-    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="/img/favijhon.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .menu {
+            display: none;
+        }
+    </style>
 </head>
 
-<body class="inicio">
+<body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/"><span class="color1"><i class="icon icon-home"></i></span> INICIO</a></li>
-                <li><a href="/LugaresTuristicos/sitios.html"><span class="color2"><i class="icon icon-earth"></i></span>LUGARES TURÍSTICOS</a></li>
-                <li>
-                    <a href="/"> <span class="color3"><i class="icon icon-phone"></i></span>CONTACTOS</a>
-                </li>
-            </ul>
-        </nav>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="/index.html" class="w3-bar-item w3-button w3-padding-large"><span class="color1"><i class="icon icon-home"></i></span>Perfil</a>
+                <a href="/LugaresTuristicos/sitios.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><span class="color2"><i class="icon icon-earth"></i></span>Lugares Turisticos</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><span class="color3"><i class="icon icon-phone"></i></span>Contactenos</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                        <a href="#" class="w3-bar-item w3-button">Extras</a>
+                        <a href="#" class="w3-bar-item w3-button">Media</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
     </header>
-    <hr>
-
-    <section align="center">
-        <h1><strong><font color="#7CADC6">CONTACTOS</font></strong> </h1>
-        <h2 id="new1">
-            Me puedes enviar cualquier consulta, Estoy para responder tus inquietudes...</h2>
-        <article>
-            <p>
-                <font color="#black"><cite><q> Las cosas son cuando tienen que ser. Antes no es necesario. Después es tarde. Todo es por algo.</q>jc-1980</cite> </font><br>
-            </p>
-        </article>
-
-    </section>
-    <aside>
-        <h3 id="var"><em>Jhon Willy Culqui Galán</em></h3>
-        <p id="var">El Bosque <br> jr-Gonzales Prada 379 <br> Cajamarca-PERU</p>
-        <h4 id="var">Correo electronico: <strong><a href="https://mail.google.com/mail/u/0/jculquig14@unc.edu.pe">jculquig14@unc.edu.pe</a> </strong></h4>
-    </aside>
-    <hr>
     <section>
-        <dl>
-            <h3 id="var"> <strong>Contactar a mis Amigos: </strong> </h3>
-            <dt id="var">&circledS;<em>Luis Chavez Villanueva</em> </dt><br>
-            <dd id="var">Facebook: <strong><a href="https://www.facebook.com/search/top/?q=luis%20ch%C3%A1vez%20villanueva&epa=SEARCH_BOX">Chavez@hotmail.com</a></strong> </dd>
-            <dd id="var">Numero de tlf: <strong>923791061</strong></dd>
-            <dt id="var">&circledS;<em>Ana Cortez Tasilla</em> </dt><br>
-            <dd id="var">facebook: <strong><a href="https://www.facebook.com/anayoselin.corteztasilla">AnaTasilla@hotmil.com</a></strong> </dd>
-            <dd id="var">Numero de tlf: <strong>923493319</strong></dd>
-
-        </dl>
-    </section>
-    <hr>
-    <section>
-        <table class="tabla" align="center">
-            <tr>
-                <th>
-                    <h3 id="negro"> <em>SUGERENCIAS POR e-mail AQUI:</em> </h3>
-                    <form action="JHON: jhonwuz@hotmail.com" method="POST" enctype="text/plain">
-                        <font color="blue">Nombre: </font> <br>
-                        <input type="text" name="name" value="Ingresa tu nombr  e"> <br>
-                        <font color="blue">E-mail: </font> <br>
-                        <input type="text" name="mail" value="Ingresa tu e-mail"> <br>
-                        <font color="blue">Sugerencias: </font> <br>
-                        <input type="text" name="sugerencias" value="Tus sugerencias" size="80"> <br> <br>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Cajamarca, PERU<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Telefono: +00 151515<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: jculquig14@unc.edu.pe<br>
+                </div>
+                <div class="w3-col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
+                        <button class="w3-button w3-black w3-section w3-right" type="submit">Enviar</button>
                     </form>
-                    <br>
-                </th>
-                <th>
-                    <h3 id="negro"> Ayuda para ubicarme en la ciudad de Cajamarca </h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15834.816509263825!2d-78.50324034999998!3d-7.160164149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1557161401113!5m2!1ses!2spe" width="400" height="300" frameborder="0"
-                        allowfullscreen></iframe>
-                </th>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
     </section>
-    <hr>
-    <footer class="pie">
-
-        <em><p id="var">Visitar página en:<a href="https://www.facebook.com/jhonwuz@hotmail.com">faceboock-jhon</a></p> </em> &copy; <em>Culqui Galan 2019 - Todos los derechos reservados por.</em>
-
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <em><p >Visitar página en:<a href="https://www.facebook.com/jhonwuz@hotmail.com">faceboock-jhon</a></p> </em> &copy; <em>Culqui Galan 2019 - Todos los derechos reservados por.</em>
         <address id="var"><strong>Autor: Jhon Culqui.</strong></address>
-        <ins id="var" datetime="060519"> Lunes 6 de mayo del 2019</ins>
+        <ins datetime="060519"> Lunes 4 de junio del 2019</ins><br>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
     </footer>
-    <script src="" async defer></script>
+
+
+    <script src="Bootstrap/js/jquery.js" async defer></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
